@@ -3,64 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawn Mariner</title>
+
+    <title>Shawn Mariner | Aerospace Engineering</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
+
 <body>
 
-<header>
-    <h1>Shawn Mariner</h1>
-    <p>Aerospace Engineering Student | University of Maryland</p>
-</header>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am an aerospace engineering student at the University of Maryland with interests in
-        mechanical design, research, space systems, and engineering problem solving.
-    </p>
-</section>
+    <header class="navbar">
+        <a href="#home" class="logo">SM</a>
 
-<section>
-    <h2>Featured Project</h2>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <div class="project-card">
-        <h3>Bevameter Research Project</h3>
-
-        <p>
-            Designing and developing a bevameter system for soil testing and wheel-terrain
-            interaction research. The project includes CAD design, load analysis,
-            motor selection, sensing systems, and experimental testing.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>Skills</h2>
-
-    <ul>
-        <li>SolidWorks</li>
-        <li>MATLAB</li>
-        <li>Python</li>
-        <li>Engineering Design</li>
-        <li>CAD Modeling</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact</h2>
-
-    <p>
-        Email:
-        <a href="mailto:smarine1@terpmail.umd.edu">
-            smarine1@terpmail.umd.edu
+        <a href="#" class="resume-button">
+            <i class="fa-solid fa-download"></i>
+            Resume
         </a>
-    </p>
-</section>
 
-<footer>
-    <p>© 2026 Shawn Mariner</p>
-</footer>
+        <button class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ENGINEER &nbsp;•&nbsp; BUILD &nbsp;•&nbsp; EXPLORE
+                </p>
+
+                <h1>
+                    Shawn <span>Mariner</span>
+                </h1>
+
+                <h2>Aerospace Engineering Student</h2>
+
+                <p class="school">
+                    University of Maryland, College Park
+                </p>
+
+                <p class="hero-description">
+                    Driven by a passion for aircraft, engineering systems, and
+                    real-world problem solving. I design, build, and explore
+                    technologies that turn engineering concepts into working solutions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#work" class="button primary-button">
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="button secondary-button">
+                        Get in Touch
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-side-text">
+                <span>DISCIPLINE</span>
+                <span>DESIGN</span>
+                <span>EXECUTE</span>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about section reveal" id="about">
+
+            <div class="section-heading">
+
+                <p class="section-number">01 / ABOUT</p>
+
+                <h2>
+                    Engineering with
+                    <span>purpose.</span>
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm an aerospace engineering student at the University
+                        of Maryland focused on developing practical engineering
+                        skills through design, analysis, experimentation, and
+                        hands-on projects.
+                    </p>
+
+                    <p>
+                        My interests span aerospace systems, mechanical design,
+                        unmanned aircraft, CAD, electronics, and emerging
+                        defense technologies.
+                    </p>
+
+                </div>
+
+                <div class="quick-info">
+
+                    <div class="info-item">
+                        <span>FOCUS</span>
+                        <strong>Aerospace Engineering</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>UNIVERSITY</span>
+                        <strong>University of Maryland</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>INTERESTS</span>
+                        <strong>Aircraft / UAS / Mechanical Design</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WORK CARDS
+        ========================== -->
+
+        <section class="work section" id="work">
+
+            <div class="section-heading reveal">
+
+                <p class="section-number">02 / WORK</p>
+
+                <h2>
+                    Explore what I'm
+                    <span>building.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="project-categories">
+
+
+                <!-- ENGINEERING PROJECTS -->
+
+                <a href="#" class="category-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85"
+                        alt="Engineering project"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-number">01</div>
+
+                    <div class="category-content">
+
+                        <p class="card-label">DESIGN / RESEARCH / ANALYSIS</p>
+
+                        <h3>Engineering Projects</h3>
+
+                        <p>
+                            Academic, research, and engineering projects focused
+                            on solving real-world technical problems.
+                        </p>
+
+                        <span>
+                            Explore Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PERSONAL BUILDS -->
+
+                <a href="#" class="category-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1200&q=85"
+                        alt="Electronics and personal engineering build"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-number">02</div>
+
+                    <div class="category-content">
+
+                        <p class="card-label">BUILD / TEST / EXPERIMENT</p>
+
+                        <h3>Personal Builds</h3>
+
+                        <p>
+                            Independent projects involving electronics,
+                            embedded systems, UAS, RF, and experimentation.
+                        </p>
+
+                        <span>
+                            See Builds
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- CREDENTIALS -->
+
+                <a href="#" class="category-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=85"
+                        alt="Drone flying"
+                    >
+
+                    <div class="category-overlay"></div>
+
+                    <div class="category-number">03</div>
+
+                    <div class="category-content">
+
+                        <p class="card-label">CERTIFICATIONS / EXPERIENCE</p>
+
+                        <h3>Credentials & Experience</h3>
+
+                        <p>
+                            Certifications, technical skills, professional
+                            development, and engineering experience.
+                        </p>
+
+                        <div class="credential-badge">
+                            <i class="fa-solid fa-plane"></i>
+                            FAA Part 107 Remote Pilot
+                        </div>
+
+                        <span>
+                            View Credentials
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED PROJECT
+        ========================== -->
+
+        <section class="featured section reveal">
+
+            <div class="featured-project">
+
+                <div class="featured-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=85"
+                        alt="Mechanical engineering test rig"
+                    >
+
+                </div>
+
+                <div class="featured-overlay"></div>
+
+                <div class="featured-content">
+
+                    <p class="featured-label">
+                        FEATURED PROJECT
+                    </p>
+
+                    <h2>
+                        Bevameter
+                        <span>Test Rig</span>
+                    </h2>
+
+                    <p>
+                        Designing a modular mechanical test system for
+                        pressure-sinkage and soil shear testing, expanding the
+                        capabilities of an existing wheel test platform.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SolidWorks</span>
+                        <span>Mechanical Design</span>
+                        <span>Testing</span>
+                        <span>Research</span>
+                    </div>
+
+                    <a href="#" class="button secondary-button">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact section reveal" id="contact">
+
+            <p class="section-number">03 / CONTACT</p>
+
+            <div class="contact-layout">
+
+                <div>
+
+                    <h2>
+                        Let's build something
+                        <span>worth solving.</span>
+                    </h2>
+
+                    <p>
+                        Interested in discussing engineering, aerospace,
+                        research, internships, or project opportunities?
+                    </p>
+
+                </div>
+
+                <a
+                    href="mailto:smarine1@terpmail.umd.edu"
+                    class="contact-button"
+                >
+
+                    <span>Email Me</span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-name">
+
+            <strong>Shawn Mariner</strong>
+
+            <span>Aerospace Engineering Student</span>
+
+            <span>University of Maryland</span>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+                href="https://github.com/ShawnMariner"
+                target="_blank"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+                href="mailto:smarine1@terpmail.umd.edu"
+                aria-label="Email"
+            >
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+
+        <p class="footer-quote">
+            Engineering what's next.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
