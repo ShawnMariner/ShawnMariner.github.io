@@ -3225,3 +3225,37 @@ body > .site-footer {
         letter-spacing: -3px;
     }
 }
+/* =====================================================
+   FAA PART 107 CERTIFICATION CARD
+===================================================== */
+
+.certification-card {
+    cursor: default;
+}
+
+.certification-card:hover {
+    transform: none;
+}
+
+.certification-card .credential-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 20px;
+    padding: 9px 13px;
+
+    border: 1px solid rgba(255,255,255,0.16);
+
+    color: #d2d9df;
+    font-size: 0.72rem;
+    letter-spacing: 0.7px;
+}
+
+.certification-card .credential-badge i {
+    color: #8dd1fa;
+}
+
+.certification-card h3 {
+    line-height: 1.05;
+}
