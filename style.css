@@ -2959,3 +2959,269 @@ body > .site-footer {
         white-space: normal;
     }
 }
+/* =====================================================
+   PERSONAL BUILDS PAGE
+===================================================== */
+
+.personal-hero {
+    min-height: 70vh;
+    padding: 170px 8% 100px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(63, 151, 207, 0.10),
+            transparent 35%
+        ),
+        #05090d;
+}
+
+.personal-hero > div {
+    max-width: 950px;
+}
+
+.personal-hero h1 {
+    font-size: clamp(4rem, 9vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -5px;
+
+    margin: 20px 0 35px;
+}
+
+.personal-hero > div > p:last-child {
+    max-width: 750px;
+
+    color: #9ca8b2;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* ================= BUILDS ================= */
+
+.personal-build {
+    padding: 130px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+    align-items: center;
+
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.personal-build:nth-of-type(even) {
+    background: #080d12;
+}
+
+.personal-build-reverse .personal-build-image {
+    order: 2;
+}
+
+.personal-build-reverse .personal-build-content {
+    order: 1;
+}
+
+
+/* ================= IMAGES ================= */
+
+.personal-build-image {
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 4px;
+}
+
+.personal-build-image img {
+    width: 100%;
+    height: 620px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.personal-build-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* ================= TEXT ================= */
+
+.personal-build-content {
+    max-width: 700px;
+}
+
+.personal-build-content h2 {
+    font-size: clamp(2.8rem, 5vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -3px;
+
+    margin: 15px 0 30px;
+}
+
+.build-description {
+    color: #b2bdc6;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    margin-bottom: 45px;
+}
+
+
+/* ================= DETAIL ================= */
+
+.build-detail {
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(137, 204, 246, 0.35);
+
+    margin-bottom: 35px;
+}
+
+.build-detail > span {
+    display: block;
+
+    color: #8dd1fa;
+
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.build-detail p {
+    color: #8f9ca6;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+}
+
+
+/* ================= EXPERIMENT NOTE ================= */
+
+.build-note {
+    display: flex;
+
+    gap: 15px;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    margin: 30px 0;
+
+    border: 1px solid rgba(255,255,255,0.09);
+
+    background: rgba(255,255,255,0.02);
+}
+
+.build-note i {
+    color: #8dd1fa;
+
+    margin-top: 4px;
+}
+
+.build-note p {
+    margin: 0;
+
+    color: #88959f;
+
+    line-height: 1.7;
+
+    font-size: 0.9rem;
+}
+
+
+/* ================= MORE ================= */
+
+.personal-more {
+    padding: 140px 8%;
+
+    text-align: center;
+
+    background: #030608;
+
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.personal-more > div {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.personal-more h2 {
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -4px;
+
+    margin: 20px 0 35px;
+}
+
+.personal-more > div > p:not(.eyebrow) {
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    color: #8f9ca6;
+
+    line-height: 1.8;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+
+    .personal-build {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .personal-build-reverse .personal-build-image,
+    .personal-build-reverse .personal-build-content {
+        order: initial;
+    }
+
+    .personal-build-image img {
+        height: auto;
+        max-height: 650px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .personal-hero,
+    .personal-build,
+    .personal-more {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .personal-hero {
+        padding-top: 140px;
+    }
+
+    .personal-hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .personal-build-content h2 {
+        letter-spacing: -2px;
+    }
+
+    .personal-more h2 {
+        letter-spacing: -3px;
+    }
+}
