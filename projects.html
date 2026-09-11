@@ -8,293 +8,320 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header class="navbar scrolled">
+<!-- ================= NAVBAR ================= -->
 
-        <a href="index.html" class="logo">SM</a>
+<header class="navbar">
 
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About Me</a>
-            <a href="projects.html" class="active">Work</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+    <a href="index.html" class="logo">
+        SM<span>.</span>
+    </a>
 
-        <a href="#" class="resume-button">
-            <i class="fa-solid fa-download"></i>
-            Resume
-        </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="projects.html" class="active">Work</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
 
-        <button class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+    <a href="Shawn_Mariner_Resume_2026.pdf"
+       class="resume-button"
+       target="_blank">
+        <i class="fa-solid fa-download"></i>
+        Resume
+    </a>
 
-    </header>
-
-
-    <main>
-
-        <!-- PROJECTS HERO -->
-
-        <section class="projects-page-hero">
-
-            <div class="projects-page-overlay"></div>
-            <div class="hero-grid"></div>
-
-            <div class="projects-page-content">
-
-                <p class="eyebrow">
-                    ENGINEERING / DESIGN / RESEARCH
-                </p>
-
-                <h1>
-                    Engineering
-                    <span>Projects</span>
-                </h1>
-
-                <p>
-                    A collection of academic, research, CAD, and mechanical
-                    design work focused on solving practical engineering
-                    problems and developing real-world technical skills.
-                </p>
-
-            </div>
-
-        </section>
+</header>
 
 
-        <!-- PROJECT GRID -->
+<!-- ================= HERO ================= -->
 
-        <section class="projects-page-section">
+<section class="projects-page-hero">
 
-            <div class="section-heading reveal">
+    <div class="reveal">
 
-                <p class="section-number">SELECTED WORK</p>
+        <p class="eyebrow">
+            ENGINEERING / DESIGN / RESEARCH
+        </p>
 
-                <h2>
-                    Projects I've
-                    <span>worked on.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-page-grid">
-
-                <!-- BEVAMETER -->
-
-                <a href="bevameter.html" class="project-page-card reveal">
-
-                    <div class="project-page-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=85"
-                            alt="Mechanical engineering test rig"
-                        >
-
-                    </div>
-
-                    <div class="project-page-card-content">
-
-                        <p class="card-label">
-                            MECHANICAL DESIGN / RESEARCH
-                        </p>
-
-                        <h3>
-                            Bevameter Test Rig
-                        </h3>
-
-                        <p>
-                            A modular mechanical system designed to perform
-                            pressure-sinkage and soil shear testing while
-                            expanding the capabilities of an existing wheel
-                            test platform.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>SolidWorks</span>
-                            <span>Mechanical Design</span>
-                            <span>Testing</span>
-                            <span>Research</span>
-                        </div>
-
-                        <div class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- CAD / SOLIDWORKS -->
-
-               <a href="rover-wheel.html" class="project-page-card reveal">
-
-    <div class="project-page-image">
-        <!-- keep your existing image code here for now -->
-    </div>
-
-    <div class="project-page-content">
-
-        <h3>Rover Wheel Design</h3>
+        <h1>Engineering<br>Projects</h1>
 
         <p>
-            Designed, prototyped, and tested wheel and tread concepts for
-            GREMLINS lunar microrovers operating in loose granular terrain.
+            A collection of academic, research, CAD, prototyping,
+            and mechanical design work developed throughout my
+            aerospace engineering studies.
         </p>
 
-        <div class="project-tags">
-            <span>Fusion 360</span>
-            <span>3D Printing</span>
-            <span>Testing</span>
-            <span>Terramechanics</span>
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects-page-content">
+
+    <div class="projects-page-section">
+
+        <div class="section-heading reveal">
+
+            <p class="eyebrow">SELECTED WORK</p>
+
+            <h2>Engineering in practice.</h2>
+
+            <p>
+                Research, design, prototyping, and testing projects
+                focused on aerospace and mechanical systems.
+            </p>
+
+        </div>
+
+
+        <div class="projects-page-grid">
+
+
+            <!-- ================= BEVAMETER ================= -->
+
+            <a href="bevameter.html"
+               class="project-page-card reveal">
+
+                <div class="project-page-image">
+
+                    <img
+                        src="42a54080-1a52-4621-a445-3c2a901e2fcb.png"
+                        alt="SOLIDWORKS assembly of Bevameter test rig">
+
+                </div>
+
+
+                <div class="project-page-card-content">
+
+                    <p class="eyebrow">
+                        MECHANICAL DESIGN / RESEARCH
+                    </p>
+
+                    <h3>Bevameter Test Rig</h3>
+
+                    <p>
+                        A modular mechanical system designed to perform
+                        pressure-sinkage and soil shear testing while
+                        expanding the capabilities of an existing wheel
+                        test platform.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>SOLIDWORKS</span>
+                        <span>Mechanical Design</span>
+                        <span>Testing</span>
+                        <span>Research</span>
+
+                    </div>
+
+
+                    <div class="project-card-link">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ================= ROVER WHEEL ================= -->
+
+            <a href="rover-wheel.html"
+               class="project-page-card reveal">
+
+                <div class="project-page-image">
+
+                    <img
+                        src="5c97f1b4-a732-4805-8f6d-0eb6abeb4d59.png"
+                        alt="GREMLINS microrover testing prototype wheels">
+
+                </div>
+
+
+                <div class="project-page-card-content">
+
+                    <p class="eyebrow">
+                        ROVER MOBILITY / DESIGN / TESTING
+                    </p>
+
+                    <h3>Rover Wheel Design</h3>
+
+                    <p>
+                        Designed, prototyped, and tested wheel and tread
+                        concepts for GREMLINS lunar microrovers operating
+                        in loose granular terrain.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Fusion 360</span>
+                        <span>3D Printing</span>
+                        <span>Testing</span>
+                        <span>Terramechanics</span>
+
+                    </div>
+
+
+                    <div class="project-card-link">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ================= ACADEMIC WORK ================= -->
+
+            <a href="#"
+               class="project-page-card reveal">
+
+                <div class="project-page-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80"
+                        alt="Engineering calculations and technical work">
+
+                </div>
+
+
+                <div class="project-page-card-content">
+
+                    <p class="eyebrow">
+                        COURSEWORK / ANALYSIS
+                    </p>
+
+                    <h3>Academic Engineering Work</h3>
+
+                    <p>
+                        Selected engineering coursework, analysis,
+                        programming, and technical problem solving from
+                        my aerospace engineering studies.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>MATLAB</span>
+                        <span>Physics</span>
+                        <span>Engineering Mechanics</span>
+
+                    </div>
+
+
+                    <div class="project-card-link">
+
+                        Coming Soon
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
         </div>
 
     </div>
 
-</a>
-
-                        <div class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                    </div>
-
-                </a>
+</section>
 
 
-                <!-- ACADEMIC -->
+<!-- ================= CTA ================= -->
 
-                <a href="#" class="project-page-card reveal">
+<section class="projects-cta">
 
-                    <div class="project-page-image">
+    <div class="reveal">
 
-                        <img
-                            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=85"
-                            alt="Academic engineering project"
-                        >
-
-                    </div>
-
-                    <div class="project-page-card-content">
-
-                        <p class="card-label">
-                            COURSEWORK / ANALYSIS
-                        </p>
-
-                        <h3>
-                            Academic Engineering Work
-                        </h3>
-
-                        <p>
-                            Selected engineering coursework involving statics,
-                            mechanics, physics, numerical analysis, and
-                            aerospace-related problem solving.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Engineering Mechanics</span>
-                            <span>Physics</span>
-                            <span>Analysis</span>
-                        </div>
-
-                        <div class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-
-        <section class="projects-cta reveal">
-
-            <p class="section-number">
-                MORE TO COME
-            </p>
-
-            <h2>
-                Always building the
-                <span>next thing.</span>
-            </h2>
-
-            <p>
-                This portfolio will continue to grow with new engineering,
-                research, CAD, and aerospace projects.
-            </p>
-
-            <a href="index.html#contact" class="button primary-button">
-                Contact Me
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-name">
-
-            <strong>Shawn Mariner</strong>
-
-            <span>Aerospace Engineering Student</span>
-
-            <span>University of Maryland</span>
-
-        </div>
-
-
-        <div class="social-links">
-
-            <a href="#" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a
-                href="https://github.com/ShawnMariner"
-                target="_blank"
-                aria-label="GitHub"
-            >
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a
-                href="mailto:smarine1@terpmail.umd.edu"
-                aria-label="Email"
-            >
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-
-        </div>
-
-
-        <p class="footer-quote">
-            Engineering what's next.
+        <p class="eyebrow">
+            CONTINUING TO BUILD
         </p>
 
-    </footer>
+        <h2>
+            Always building the next thing.
+        </h2>
+
+        <p>
+            I'm continuing to expand this portfolio as I work on
+            new aerospace, mechanical, and technical projects.
+        </p>
+
+        <a href="index.html#contact"
+           class="button primary-button">
+
+            Contact Me
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
 
 
-    <script src="script.js"></script>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <strong>Shawn Mariner</strong>
+
+        <p>
+            Aerospace Engineering Student
+        </p>
+
+        <p>
+            University of Maryland, College Park
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="https://github.com/ShawnMariner"
+           target="_blank">
+            GitHub
+        </a>
+
+        <a href="mailto:smarine1@terpmail.umd.edu">
+            Email
+        </a>
+
+    </div>
+
+
+    <p class="footer-tagline">
+        Engineering what's next.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
