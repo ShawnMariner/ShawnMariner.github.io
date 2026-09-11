@@ -2379,3 +2379,324 @@ model-viewer {
     }
 
 }
+/* =====================================================
+   OVER TERRAIN VEHICLE PROJECT PAGE
+===================================================== */
+
+.otv-hero {
+    min-height: 92vh;
+    padding: 150px 8% 80px;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    gap: 70px;
+    align-items: center;
+    background:
+        radial-gradient(circle at 75% 45%, rgba(65, 85, 100, 0.18), transparent 38%),
+        #05090d;
+}
+
+.otv-hero h1 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -4px;
+    margin: 15px 0 30px;
+}
+
+.otv-intro {
+    max-width: 650px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #aeb8c1;
+}
+
+.otv-hero-image img {
+    width: 100%;
+    max-height: 720px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.09);
+}
+
+
+/* SECTIONS */
+
+.otv-section {
+    position: relative;
+    padding: 130px 10%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 50px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.otv-dark-section {
+    background: #080d12;
+}
+
+.otv-section-number {
+    color: #53606b;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-top: 7px;
+}
+
+.otv-section-content {
+    max-width: 950px;
+}
+
+.otv-section-content h2,
+.otv-cad-section h2,
+.otv-built-section h2,
+.otv-video-section h2,
+.otv-more h2 {
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 10px 0 30px;
+}
+
+.otv-section-content > p,
+.otv-cad-text > p,
+.otv-built-heading > p,
+.otv-video-heading > p {
+    color: #9ca8b2;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    max-width: 780px;
+    margin-bottom: 18px;
+}
+
+
+/* INFO GRID */
+
+.otv-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 60px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.otv-info-grid div {
+    padding: 25px;
+    background: #05090d;
+}
+
+.otv-info-grid span {
+    display: block;
+    color: #687681;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.otv-info-grid strong {
+    font-size: 0.95rem;
+}
+
+
+/* CONTRIBUTION CARDS */
+
+.otv-design-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.otv-design-card {
+    padding: 35px 30px;
+    border: 1px solid rgba(255,255,255,0.09);
+    background: rgba(255,255,255,0.015);
+    transition: 0.3s ease;
+}
+
+.otv-design-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.otv-design-card i {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #a8b3bc;
+}
+
+.otv-design-card h3 {
+    margin-bottom: 12px;
+}
+
+.otv-design-card p {
+    color: #7f8c96;
+    line-height: 1.7;
+}
+
+
+/* TEAM CAD */
+
+.otv-cad-section {
+    padding: 130px 8%;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    gap: 80px;
+    background: #030608;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.otv-cad-image img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    background: #fff;
+}
+
+.team-context-label {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 14px;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #82909b;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+}
+
+
+/* BUILT VEHICLE */
+
+.otv-built-section {
+    padding: 130px 8%;
+}
+
+.otv-built-heading {
+    max-width: 800px;
+    margin-bottom: 55px;
+}
+
+.otv-built-image {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.otv-built-image img {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.09);
+}
+
+
+/* VIDEO */
+
+.otv-video-section {
+    padding: 130px 8%;
+    background: #080d12;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.otv-video-heading {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.otv-video-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.otv-video-container video {
+    display: block;
+    width: 100%;
+    max-height: 750px;
+    background: #000;
+}
+
+
+/* SKILLS */
+
+.otv-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.09);
+    border-left: 1px solid rgba(255,255,255,0.09);
+}
+
+.otv-skills-grid div {
+    padding: 30px;
+    border-right: 1px solid rgba(255,255,255,0.09);
+    border-bottom: 1px solid rgba(255,255,255,0.09);
+}
+
+.otv-skills-grid span {
+    display: block;
+    margin-bottom: 15px;
+    color: #596874;
+    font-size: 0.7rem;
+}
+
+.otv-skills-grid strong {
+    font-size: 1rem;
+}
+
+
+/* MORE WORK */
+
+.otv-more {
+    padding: 140px 10%;
+    text-align: center;
+    background: #030608;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .otv-hero,
+    .otv-cad-section {
+        grid-template-columns: 1fr;
+    }
+
+    .otv-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .otv-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otv-design-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .otv-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .otv-hero,
+    .otv-section,
+    .otv-cad-section,
+    .otv-built-section,
+    .otv-video-section,
+    .otv-more {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .otv-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .otv-info-grid,
+    .otv-skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
