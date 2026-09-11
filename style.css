@@ -1448,3 +1448,378 @@ footer {
     }
 
 }
+/* =====================================================
+   BEVAMETER PROJECT PAGE
+===================================================== */
+
+.bev-hero {
+    min-height: 92vh;
+    padding: 150px 8% 80px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: 70px;
+    background:
+        radial-gradient(circle at 75% 50%, rgba(45, 75, 100, 0.16), transparent 35%),
+        #05090d;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #8d9aa6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    transition: 0.25s ease;
+}
+
+.back-link:hover {
+    color: white;
+    transform: translateX(-4px);
+}
+
+.bev-hero h1 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -4px;
+    margin: 15px 0 30px;
+}
+
+.bev-intro {
+    max-width: 650px;
+    color: #aeb8c1;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.project-tags span {
+    border: 1px solid rgba(255,255,255,0.16);
+    padding: 8px 13px;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #c6ced5;
+}
+
+.bev-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bev-hero-image img {
+    width: 100%;
+    max-height: 720px;
+    object-fit: contain;
+    filter: contrast(1.04);
+}
+
+
+/* PROJECT CONTENT */
+
+.bev-section {
+    position: relative;
+    padding: 130px 10%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 50px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.bev-dark-section {
+    background: #080d12;
+}
+
+.bev-section-number {
+    color: #53606b;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-top: 7px;
+}
+
+.bev-section-content {
+    max-width: 950px;
+}
+
+.bev-section-content h2,
+.model-heading h2,
+.cad-showcase h2,
+.bev-status h2 {
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 10px 0 30px;
+}
+
+.bev-section-content > p,
+.model-heading > p:last-child,
+.cad-showcase-text > p:last-child,
+.bev-status p {
+    color: #9ca8b2;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    max-width: 780px;
+    margin-bottom: 18px;
+}
+
+
+/* INFO GRID */
+
+.bev-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 60px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.bev-info-grid div {
+    background: #05090d;
+    padding: 25px;
+}
+
+.bev-info-grid span {
+    display: block;
+    color: #687681;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.bev-info-grid strong {
+    font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   INTERACTIVE 3D MODEL
+===================================================== */
+
+.model-section {
+    padding: 130px 8%;
+    background: #030608;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.model-heading {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.model-container {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    background:
+        radial-gradient(circle at center, #19222a 0%, #0a0f14 50%, #05080b 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+
+model-viewer {
+    display: block;
+    width: 100%;
+    height: 700px;
+    --poster-color: transparent;
+}
+
+.model-loading {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #75838e;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+.model-controls-text {
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    display: flex;
+    gap: 25px;
+    color: #7f8c96;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.model-controls-text span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* DESIGN CARDS */
+
+.design-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.design-card {
+    border: 1px solid rgba(255,255,255,0.09);
+    padding: 35px 30px;
+    background: rgba(255,255,255,0.015);
+    transition: 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.design-card i {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #a8b3bc;
+}
+
+.design-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.design-card p {
+    color: #7f8c96;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+
+/* CAD SHOWCASE */
+
+.cad-showcase {
+    padding: 130px 8%;
+    display: grid;
+    grid-template-columns: 0.65fr 1fr;
+    gap: 80px;
+    align-items: center;
+    background: #080d12;
+}
+
+.cad-large-image {
+    display: flex;
+    justify-content: center;
+}
+
+.cad-large-image img {
+    width: 100%;
+    max-height: 850px;
+    object-fit: contain;
+}
+
+
+/* STATUS */
+
+.bev-status {
+    padding: 150px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.bev-status > div {
+    max-width: 850px;
+    margin: auto;
+}
+
+.bev-status p {
+    margin: 0 auto 35px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .bev-hero {
+        grid-template-columns: 1fr;
+        padding-top: 140px;
+    }
+
+    .bev-hero-image img {
+        max-height: 600px;
+    }
+
+    .bev-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .bev-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .design-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cad-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    model-viewer {
+        height: 550px;
+    }
+
+    .model-loading {
+        height: 550px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .bev-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .bev-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .bev-section,
+    .model-section,
+    .cad-showcase,
+    .bev-status {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .bev-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    model-viewer {
+        height: 450px;
+    }
+
+    .model-loading {
+        height: 450px;
+    }
+
+    .model-controls-text {
+        gap: 12px;
+        left: 15px;
+        bottom: 15px;
+        flex-wrap: wrap;
+    }
+}
