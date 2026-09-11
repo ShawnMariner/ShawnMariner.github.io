@@ -3279,3 +3279,20 @@ body > .site-footer {
 .category-card .category-overlay {
     z-index: 1;
 }
+/* =====================================================
+   FEATURED BEVAMETER IMAGE FIT
+===================================================== */
+
+.featured-image {
+    background: #d9d9d9;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: 72% center;
+
+    transform: scale(0.88);
+}
