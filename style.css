@@ -1823,3 +1823,316 @@ model-viewer {
         flex-wrap: wrap;
     }
 }
+/* =====================================================
+   ROVER WHEEL PROJECT PAGE
+===================================================== */
+
+.rover-hero {
+    min-height: 92vh;
+    padding: 150px 8% 80px;
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
+    align-items: center;
+    gap: 70px;
+    background:
+        radial-gradient(circle at 78% 45%, rgba(67, 82, 95, 0.19), transparent 35%),
+        #05090d;
+}
+
+.rover-hero h1 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -4px;
+    margin: 15px 0 30px;
+}
+
+.rover-intro {
+    max-width: 650px;
+    color: #aeb8c1;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.rover-hero-image img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.09);
+}
+
+.rover-section {
+    position: relative;
+    padding: 130px 10%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 50px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.rover-dark-section {
+    background: #080d12;
+}
+
+.rover-section-number {
+    color: #53606b;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-top: 7px;
+}
+
+.rover-section-content {
+    max-width: 950px;
+}
+
+.rover-section-content h2,
+.grouser-heading h2,
+.rover-testing h2,
+.poster-section h2,
+.rover-gallery h2,
+.rover-status h2 {
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 10px 0 30px;
+}
+
+.rover-section-content > p,
+.grouser-heading p:last-child,
+.rover-testing-text > p,
+.poster-content > p {
+    color: #9ca8b2;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    max-width: 780px;
+    margin-bottom: 18px;
+}
+
+.rover-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 60px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.rover-info-grid div {
+    background: #05090d;
+    padding: 25px;
+}
+
+.rover-info-grid span,
+.testing-specs span {
+    display: block;
+    color: #687681;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.rover-info-grid strong,
+.testing-specs strong {
+    font-size: 0.95rem;
+}
+
+
+/* DESIGN CARDS */
+
+.rover-design-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.rover-design-card {
+    padding: 35px 30px;
+    border: 1px solid rgba(255,255,255,0.09);
+    background: rgba(255,255,255,0.015);
+    transition: 0.3s ease;
+}
+
+.rover-design-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.rover-design-card i {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    color: #a8b3bc;
+}
+
+.rover-design-card h3 {
+    margin-bottom: 12px;
+}
+
+.rover-design-card p {
+    color: #7f8c96;
+    line-height: 1.7;
+}
+
+
+/* GROUSERS */
+
+.grouser-section {
+    padding: 130px 10%;
+    background: #030608;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.grouser-heading {
+    max-width: 850px;
+}
+
+.grouser-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    gap: 10px;
+}
+
+.grouser-grid div {
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* TESTING */
+
+.rover-testing {
+    padding: 130px 8%;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.rover-testing-image img {
+    width: 100%;
+    max-height: 720px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.09);
+}
+
+.testing-specs {
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.testing-specs div {
+    border-left: 1px solid rgba(255,255,255,0.18);
+    padding-left: 18px;
+}
+
+
+/* POSTER */
+
+.poster-section {
+    padding: 130px 10%;
+    background: #080d12;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.poster-content {
+    max-width: 850px;
+}
+
+
+/* GALLERY */
+
+.rover-gallery {
+    padding: 130px 8%;
+}
+
+.rover-gallery-heading {
+    margin-bottom: 50px;
+}
+
+.rover-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rover-gallery-grid img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* STATUS */
+
+.rover-status {
+    padding: 140px 10%;
+    text-align: center;
+    background: #030608;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .rover-hero,
+    .rover-testing {
+        grid-template-columns: 1fr;
+    }
+
+    .rover-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .rover-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rover-design-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .grouser-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rover-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rover-gallery-grid img {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .rover-hero,
+    .rover-section,
+    .grouser-section,
+    .rover-testing,
+    .poster-section,
+    .rover-gallery,
+    .rover-status {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .rover-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .rover-info-grid,
+    .grouser-grid {
+        grid-template-columns: 1fr;
+    }
+}
