@@ -1159,3 +1159,292 @@ footer {
     }
 
 }
+/* ========================================
+   PROJECTS PAGE
+======================================== */
+
+.projects-page-hero {
+    min-height: 68vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 6% 90px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2,7,11,0.96),
+            rgba(2,7,11,0.72)
+        ),
+        url("hero-jet.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.projects-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,0.1),
+            transparent 50%,
+            #05090d 100%
+        );
+}
+
+.projects-page-content {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 850px;
+}
+
+.projects-page-content h1 {
+    font-size:
+        clamp(
+            4rem,
+            8vw,
+            7rem
+        );
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+}
+
+.projects-page-content h1 span {
+    color: #9dd8ff;
+}
+
+.projects-page-content > p:last-child {
+    color:
+        rgba(255,255,255,0.65);
+
+    max-width: 680px;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   PROJECT GRID
+======================================== */
+
+.projects-page-section {
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding:
+        110px 6%;
+}
+
+.projects-page-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 60px;
+}
+
+.project-page-card {
+    background:
+        rgba(255,255,255,0.025);
+
+    border:
+        1px solid rgba(158,216,255,0.18);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.project-page-card:hover {
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(158,216,255,0.55);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.35);
+}
+
+.project-page-image {
+    height: 290px;
+
+    overflow: hidden;
+}
+
+.project-page-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease;
+}
+
+.project-page-card:hover
+.project-page-image img {
+    transform:
+        scale(1.06);
+}
+
+.project-page-card-content {
+    padding: 30px;
+}
+
+.project-page-card-content h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 14px;
+}
+
+.project-page-card-content > p {
+    color:
+        rgba(255,255,255,0.58);
+
+    line-height: 1.7;
+
+    font-size: 0.9rem;
+}
+
+.project-link {
+    margin-top: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #9dd8ff;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+.project-link i {
+    transition:
+        transform 0.3s ease;
+}
+
+.project-page-card:hover
+.project-link i {
+    transform:
+        translateX(6px);
+}
+
+
+/* ========================================
+   PROJECTS CTA
+======================================== */
+
+.projects-cta {
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding:
+        30px 6% 130px;
+}
+
+.projects-cta h2 {
+    font-size:
+        clamp(
+            3rem,
+            6vw,
+            5.5rem
+        );
+
+    max-width: 900px;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.projects-cta h2 span {
+    color: #9dd8ff;
+}
+
+.projects-cta > p {
+    color:
+        rgba(255,255,255,0.6);
+
+    max-width: 650px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   PROJECTS MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .projects-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .projects-page-hero {
+        padding:
+            120px 5% 70px;
+    }
+
+    .projects-page-content h1 {
+        letter-spacing: -2px;
+    }
+
+    .projects-page-section {
+        padding:
+            90px 5%;
+    }
+
+    .project-page-image {
+        height: 220px;
+    }
+
+    .projects-cta {
+        padding:
+            20px 5% 100px;
+    }
+
+}
